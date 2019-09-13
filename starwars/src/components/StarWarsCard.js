@@ -6,7 +6,7 @@ const CharacterContainer = styled.div`
   flex-direction: column;
   color: white;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  background-color: rgba(187, 209, 230, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
   border: solid 2px #443e3e;
   width: 25%;
