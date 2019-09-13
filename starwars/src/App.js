@@ -9,6 +9,7 @@ const CardContainer = styled.div`
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border: red;
 `;
 
 const App = () => {

@@ -5,7 +5,8 @@ const CharacterContainer = styled.div`
   display: flex;
   flex-direction: column;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(187, 209, 230, 0.6);
   border-radius: 1rem;
   border: solid 2px #443e3e;
   width: 25%;
@@ -19,11 +20,13 @@ const SpaceButton = styled.button`
   height: 3rem;
   margin: 2rem auto;
   border: solid 1px grey;
-  background: ${props => (props.primary ? "#fff" : "#689775")};
-  color: ${props => (props.primary ? "#689775" : "#fff")};
+  font-weight: 600;
+  cursor: pointer;
+  background: ${props => (props.primary ? "#7C6658" : "#fff")};
+  color: ${props => (props.primary ? "#fff" : "#7C6658")};
   &:hover {
-    background: ${props => (props.primary ? "#689775" : "#fff")};
-    color: ${props => (props.primary ? "#fff" : "#689775")};
+    background: ${props => (props.primary ? "#fff" : "#7C6658")};
+    color: ${props => (props.primary ? "#7C6658" : "#fff")};
   }
 `;
 
@@ -31,7 +34,7 @@ const StarWarsCard = props => {
   return (
     <CharacterContainer>
       <h2>{props.name}</h2>
-      <p>{props.gender}</p>
+      <p>Gender: {props.gender}</p>
       <p>Born: {props.birthYear}</p>
       <p>Eye Color: {props.eyeColor}</p>
       <SpaceButton primary>Pick Character</SpaceButton>
